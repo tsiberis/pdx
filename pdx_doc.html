@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 25.2.5.2 (Windows)"/>
+	<meta name="created" content="2025-09-10T23:58:26.833000000"/>
+	<meta name="changed" content="2025-10-07T19:45:12.289679300"/>
+	<style type="text/css">
+		@page { margin: 2cm }
+		p { background: transparent; line-height: 115%; margin-bottom: 0.25cm }
+	</style>
+</head>
+<body lang="el-GR" dir="ltr"><p><br/>
+<br/>
+
+</p>
+<p align="center"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><i><b>Αρχείο
+βοήθειας του προγράμματος (<span lang="en-US">QGIS
+plugin) pdx</span></b></i></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><i><b>1.
+Εισαγωγή</b></i></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Καλώς
+ήρθατε στην πρώτη έκδοση του προγράμματος
+<span lang="en-US">pdx. </span>Το πρόγραμμα αυτό
+δημιουργεί αυτόματα το πιστοποιητικό
+δασικού εν γένει χαρακτήρα (για μια
+αιτηθείσα έκταση) του άρθρου 20 του νόμου
+3889/2010 όπως αυτός ισχύει, το απόσπασμα
+χάρτη που το συνοδεύει καθώς επίσης και
+μια απάντηση σε αίτηση όταν αυτή
+χρειάζεται να εκδοθεί. Απευθύνεται
+προφανώς στους δασικούς υπαλλήλους των
+τμημάτων δασικών χαρτών και όχι μόνο.</font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Η
+ανάγκη δημιουργίας αυτού του προγράμματος
+προέκυψε από το γεγονός ότι πολλές φορές
+οι αιτήσεις γι αυτά τα πιστοποιητικά
+πέφτουν σαν βροχή στην Υπηρεσία κι έτσι
+πάνε πίσω οι υπόλοιπες (ουκ ολίγες)
+δουλειές.</font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Και
+από τη στιγμή που υπάρχει πλέον πολύ
+καλό και ελεύθερο λογισμικό για να
+υποστηρίξει αυτή την εργασία, πιστεύουμε
+ότι αξίζει τον κόπο να γίνει μια προσπάθεια
+προς αυτή την κατεύθυνση.</font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><i><b>2.
+Στήσιμο του προγράμματος</b></i></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><u>α)
+Αναγκαίο λογισμικό</u></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Υποθέτουμε
+ότι δουλεύουμε σε περιβάλλον </font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">windows
+10 (</span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">λογικά
+και σε 11). Για να τρέξουμε το πρόγραμμα
+</span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">pdx
+</span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">και
+να λειτουργήσει αυτό θα πρέπει καταρχήν
+να έχουμε </span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">QGIS
+</span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">και
+συγκεκριμένα την έκδοση 3.40 – κατεβάστε
+την από <a href="https://download.qgis.org/downloads/QGIS-OSGeo4W-3.40.10-1.msi">εδώ</a>.</span></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">Επίσης
+για τις λειτουργικές ανάγκες μας σε </span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">CAD
+</span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">περιβάλλον
+θα χρειαστούμε το </span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">NanoCAD
+</span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">και
+συγκεκριμένα την έκδοση 5.0 που την
+κατεβάζετε από <a href="https://nanocad.com/products/nanocad-free/download/">εδώ</a>
+- θα χρειαστεί να κάνετε </span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">register.</span></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Η
+βιβλιοθήκη python-docx είναι και αυτή αναγκαία
+– θα μιλήσουμε σε λίγο γι αυτήν.</font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Άλλα
+</font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">resources
+</span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">που
+θα χρειαστούμε είναι το Ελληνικό εθνόσημο
+και το σύμβολο του βορρά (από το
+</font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US"><a href="https://openclipart.org/">https://openclipart.org/</a>)
+- </span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">σας
+παρέχονται </font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR"><a href="https://www.dropbox.com/scl/fi/dwffabs2yy7izckthwcss/Greece.png?rlkey=e4fi364g4idfclbc54pqidz7l&amp;st=mqp38zp6&amp;dl=0">εδώ</a>
+και <a href="https://www.dropbox.com/scl/fi/idmp3o39qksle896hsk62/northarrow.svg?rlkey=tcmvrwxda4bjz25cx26y6u5i2&amp;st=tehjahsu&amp;dl=0">εδώ</a>
+αντίστοιχα – κατεβάστε τα και σώστε τα
+στον φάκελο των εγγράφων (</span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">Documents</span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">)</span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">.</font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Το
+ίδιο το <span lang="en-US">pdx </span>που είναι ένα
+<span lang="en-US">QGIS plugin </span>δηλαδή ένα βοηθητικό
+πρόγραμμα για μια συγκεκριμένη εργασία,
+σε γλώσσα <span lang="en-US">python.</span></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><u>β)
+Η εγκατάσταση...</u></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">...των
+προηγούμενων προγραμμάτων είναι σχετικά
+απλή – ακολουθούμε τις οδηγίες. </font></font>
+</p>
+<ul>
+	<li><p style="line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+	<font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Θα
+	σταθούμε στην εγκατάσταση του python-docx
+	<span lang="en-US">module. </span>Αυτή θα γίνει μέσα
+	από το περιβάλλον του <span lang="en-US">QGIS </span>και
+	θα πρέπει να την κάνετε εσείς χειροκίνητα.
+	Πάτε λοιπόν στο <span lang="en-US">QGIS </span><span lang="el-GR">και
+	πατήστε: </span></font></font>
+	</p></li>
+</ul>
+<p style="margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><b>Plugins
+=&gt; Python Console</b></font></font></p>
+<p style="margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">Μέσα
+τώρα στην κονσόλα της </span><span lang="en-US">python
+</span><span lang="el-GR">γράψτε (δίπλα από το &gt;&gt;&gt;):
+</span></font></font>
+</p>
+<p style="margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><b>import
+sys</b> – πατήστε <span lang="en-US">enter</span></font></font></p>
+<p style="margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><b>import
+subprocess</b> – πατήστε <span lang="en-US">enter.</span></font></font></p>
+<p style="margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Στη
+συνέχεια θα βρείτε το <span lang="en-US">python
+executable </span>αρχείο του <span lang="en-US">QGIS. </span>Στην
+εξερεύνηση των <span lang="en-US">Windows </span>πάτε
+στο <span lang="en-US"><b>C: =&gt; Program Files</b></span> και
+βρίσκετε τον φάκελο του <span lang="en-US">QGIS.
+</span>Ας υποθέσουμε ότι αυτός είναι ο <span lang="en-US"><b>QGIS
+</b></span><b>3.40.4</b> οπότε μπαίνετε εκεί και
+βρίσκετε τον φάκελο <span lang="en-US"><b>apps</b></span><span lang="en-US">.
+</span>Κλικ και σε αυτόν τον φάκελο και
+εκεί θα βρείτε τον φάκελο της <span lang="en-US">python
+</span>που ας υποθέσουμε ότι αυτός είναι
+ο <b>Python312</b>. Μπείτε εν τέλει και σε αυτόν
+τον φάκελο και τέλος κλικ στη γραμμή
+διευθύνσεων του <span lang="en-US">Windows Explorer </span>και
+μετά δεξί κλικ και αντιγράψτε τη γραμμή
+διεύθυνσης:</font></font></p>
+<p style="line-height: 115%; margin-left: 0.4cm; background: transparent">
+<img src="pdx_doc_html_8a0f3856.png" name="Image1" align="bottom" width="621" height="163" border="0"/>
+
+</p>
+<p style="margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Πίσω
+πάλι στην κονσόλα της <span lang="en-US">python </span>και
+εισάγετε:</font></font></p>
+<p style="margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><b>python_exe
+= r&quot;</b></font></font></p>
+<p style="margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt">αμέσως
+μετά πατήστε &lt;<span lang="en-US">ctrl-V</span>&gt; για
+να κάνετε επικόληση αυτού που αντιγράψατε
+και τέλος πάλι <span lang="en-US">μ</span>ία απόστροφο
+<b>&quot;.</b></font></font></p>
+<p style="font-weight: normal; margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt">θα
+σχηματιστεί κάτι τέτοιο:</font></font></p>
+<p style="margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><b>python_exe
+= r&quot;C:\Program Files\QGIS 3.40.4\apps\Python312&quot;</b> –
+<span style="font-weight: normal">πατήστε </span><span lang="en-US"><span style="font-weight: normal">enter</span></span></font></font></p>
+<p style="font-weight: normal; margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt">τέλος
+εισάγετε:</font></font></p>
+<p style="font-weight: normal; margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><b>subprocess.check_call([python_exe,
+&quot;-m&quot;, &quot;pip&quot;, &quot;install&quot;, &quot;python-docx&quot;])</b>
+και πατήστε <span lang="en-US">enter – </span>εννοείται
+ότι έχετε πρόσβαση στο <span lang="en-US">internet.</span></font></font></p>
+<p style="font-weight: normal; margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Για
+να κάνετε έλεγχο της σωστής εγκατάστασης
+εισάγετε στην κονσόλα:</font></font></p>
+<p style="font-weight: normal; margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><b>import
+docx</b> – <span lang="en-US">enter</span></font></font></p>
+<p style="font-weight: normal; margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><b>print(docx.__version__)</b>
+– <span lang="en-US">enter</span></font></font></p>
+<p style="font-weight: normal; margin-left: 0.4cm; line-height: 115%; background: transparent">
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt">αν
+η <span lang="en-US">python </span>εκτυπώσει κάτι σαν
+<b>1.1.2</b> (ή παρόμοιο) τότε είμαστε εντάξει.</font></font></p>
+<ul>
+	<li><p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">Όσον
+	αφορά το ίδιο το </span><span lang="en-US"><span style="font-weight: normal">pdx
+	plugin, </span></span><span style="font-weight: normal">στο </span><span lang="en-US"><span style="font-weight: normal">QGIS
+	</span></span><span style="font-weight: normal">πατήστε
+	</span><span lang="en-US"><b>Plugins =&gt; Manage and Install
+	Plugins</b></span> <span style="font-weight: normal">και στην
+	μπάρα που γράφει </span><span lang="en-US"><b>Search…</b></span>
+	<span style="font-weight: normal">πληκτρολογήστε </span><span lang="en-US"><span style="font-weight: normal">pdx
+	</span></span><span style="font-weight: normal">φροντίζοντας
+	στο αριστερό μενού να είναι επιλεγμένο
+	το </span><span lang="en-US"><b>All</b></span><span lang="en-US"><span style="font-weight: normal">.
+	</span></span><span style="font-weight: normal">Κάτω δεξιά
+	πατήστε </span><span lang="en-US"><b>Install Plugin</b></span><span lang="en-US"><span style="font-weight: normal">.</span></span></font></font></p></li>
+</ul>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><u><span lang="el-GR">γ</span>)
+Απαραίτητη προϋπόθεση για να δουλέψει
+το πρόγραμμα...</u></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">...είναι
+να δημιουργήσετε πρώτα ένα <span lang="en-US">document
+</span><span lang="el-GR">που θα φορτώνετε κάθε
+φορά που ανοίγετε το </span><span lang="en-US">QGIS.
+</span><span lang="el-GR">Θα χρειαστείτε:</span></font></font></p>
+<ul>
+	<li><p style="line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+	<font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Ολόκληρο
+	τον κυρωμένο δασικό χάρτη της επικράτειάς
+	σας (με την κανονική του τη δομή – όπως
+	ακριβώς δηλαδή είναι διαθέσιμος στα
+	ανοιχτά δεδομένα). Θα έχει το όνομα
+	“ΔΑΣΙΚΟΣ_ΧΑΡΤΗΣ”.</font></font></p></li>
+	<li><p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Ολόκληρο
+	το <span lang="en-US">dissolved </span><span lang="el-GR">αρχείο
+	των αντιρρήσεων του δασικού χάρτη της
+	επικράτειάς σας. Θα έχει το όνομα
+	“ΟΛΕΣ_ΟΙ_ΑΝΤΙΡΡΗΣΕΙΣ”.</span></font></font></p></li>
+	<li><p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">Παρομοίως
+	το </span><span lang="en-US">(dissolved) </span><span lang="el-GR">αρχείο
+	των εξαιρέσεων ανάρτησης του δασικού
+	χάρτη της επικράτειάς σας. Θα έχει το
+	όνομα “ΟΛΕΣ_ΟΙ_ΕΞΑΙΡΕΣΕΙΣ”.</span></font></font></p></li>
+	<li><p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Τον
+	κάναβο του δασικού χάρτη της επικράτειάς
+	σας. Θα έχει το όνομα “ΚΑΝΑΒΟΣ”. Αυτός
+	είναι ουσιαστικά το πλαίσιο κάθε Α/Φ
+	πρόσφατης λήψης.</font></font></p></li>
+	<li><p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Όλες
+	τις εικόνες της πρόσφατης αεροφωτογράφησης
+	της επικράτειάς σας μαζί με τα <span lang="en-US">world
+	</span>αρχεία τους (σε οποιαδήποτε μορφή
+	σας βολεύει – προσωπικά χρησιμοποιώ
+	<span lang="en-US">ECW </span>εικόνες και αντίστοιχα
+	τα <span lang="en-US">world </span>αρχεία είναι <span lang="en-US">EWW.</span></font></font></p></li>
+</ul>
+<p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Όλα
+τα παραπάνω αρχεία είναι της μορφής
+<span lang="en-US">shapefile </span>(εκτός από τις εικόνες
+βέβαια) και σας τα προμηθεύει το τμήμα
+δασικών χαρτών. Σώστε τα σε ένα μέρος
+της αρεσκείας σας και προχωράμε. Ανοίγουμε
+το <span lang="en-US">QGIS,</span> πατάμε <span lang="en-US"><b>Project
+=&gt; New</b></span> και ευθύς αμέσως πατάμε
+<span lang="en-US"><b>Project =&gt; Properties.</b></span> Στη
+καρτέλα που θα βγει πατάμε το <span lang="en-US"><b>CRS</b></span>
+<span style="font-weight: normal">και</span> στην μπάρα
+<span lang="en-US"><b>Filter</b></span> γράφουμε <b>2100.</b>
+Από αυτά που θα προτείνει επιλέγουμε
+το <span lang="en-US"><b>EPSG:2100 – GGRS87 / Greek Grid</b></span><span lang="en-US">.</span></font></font></p>
+<p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Δεξί
+κλικ τώρα στην αριστερή μπάρα του <span lang="en-US">QGIS
+</span>και επιλέγουμε <span lang="en-US"><b>Add Group</b></span><span lang="en-US">:</span></font></font></p>
+<p style="line-height: 115%; background: transparent"><img src="pdx_doc_html_ff8e966e.png" name="Image2" align="bottom" width="621" height="203" border="0"/>
+
+</p>
+<p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Μετονομάστε
+την ομάδα (<span lang="en-US">group) </span>σε <span lang="en-US"><b>SHAPES</b></span>
+και στη συνέχεια προσθέστε ακόμη μια
+ομάδα που θα ονομάσετε <span lang="en-US"><b>RASTERS</b></span><span lang="en-US">.</span></font></font></p>
+<p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Στη
+συνέχεια επιλέξτε το <span lang="en-US"><b>SHAPES</b></span>
+και πατήστε το <span lang="en-US"><b>Open Data Source
+Manager</b></span><span lang="en-US">:</span></font></font></p>
+<p style="line-height: 115%; background: transparent"><img src="pdx_doc_html_a5f1d8de.png" name="Image3" align="bottom" width="329" height="213" border="0"/>
+
+</p>
+<p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">στην
+καρτέλα που θα βγει επιλέξτε <span lang="en-US">Browser
+</span>πάνω αριστερά:</font></font></p>
+<p style="line-height: 115%; background: transparent"><img src="pdx_doc_html_e72dc600.png" name="Image4" align="bottom" width="622" height="212" border="0"/>
+
+</p>
+<p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">και
+στη συνέχεια πλοηγηθείτε εκεί που έχετε
+αποθηκεύσει τα <span lang="en-US">shapefiles </span>και
+ένα ένα (με διπλό κλικ στα <span lang="en-US">*.shp)
+</span><span lang="el-GR">τα προσθέτετε στο </span><span lang="en-US">group.</span></font></font></p>
+<p lang="en-US" style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">H
+<span lang="el-GR">ίδια διαδικασία επαναλαμβάνεται
+με τις εικόνες: επιλέγετε το </span>RASTERS
+group <span lang="el-GR">και πλοηγηθείτε εκεί που
+έχετε αποθηκευμένες τις εικόνες και τα
+</span>world <span lang="el-GR">αρχεία (τα τελευταία
+πρέπει να έχουν το ίδιο όνομα πχ αν μια
+εικόνα έχει το όνομα </span><span lang="el-GR"><b>0726041625.</b></span><b>tif</b>
+<span lang="el-GR">τότε το </span>world file <span lang="el-GR">θα
+έχει το όνομα </span><span lang="el-GR"><b>0726041625.</b></span><b>tfw</b><span lang="el-GR"><span style="font-weight: normal">)</span></span><span style="font-weight: normal">.
+</span><span lang="el-GR"><span style="font-weight: normal">Επιλέξτε
+όλες τις εικόνες και με δεξί κλικ πατήστε
+το </span></span><b>Add Selected Layers to Project</b><span style="font-weight: normal">.
+</span><span lang="el-GR"><span style="font-weight: normal">Τέλος
+κάντε δεξί κλικ στα δύο </span></span><span style="font-weight: normal">group
+</span><span lang="el-GR"><span style="font-weight: normal">και
+επιλέξτε </span></span><b>Set Group CRS…</b> <span lang="el-GR"><span style="font-weight: normal">και
+κατά τα γνωστά </span></span><b>EPSG:2100 – GGRS87 /
+Greek Grid</b><span style="font-weight: normal">.</span></font></font></p>
+<p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Για
+να είναι έτοιμο το <span lang="en-US">document </span><span lang="el-GR">κάντε
+διπλό κλικ στο </span><span lang="en-US">shapefile </span><span lang="el-GR">του
+κανάβου και στην καρτέλα με τα </span><span lang="en-US"><b>Layer
+Properties</b></span> <span lang="el-GR">πατήστε αριστερά
+στο </span><span lang="en-US"><b>Symbology</b></span> <span lang="el-GR">και
+στη συνέχεια ως </span><span lang="en-US"><b>Project
+Style</b></span> <span lang="el-GR">διαλέξτε </span><span lang="en-US"><b>outline
+red</b></span><span lang="en-US">:</span></font></font></p>
+<p style="line-height: 115%; background: transparent"><img src="pdx_doc_html_31f5c6e.png" name="Image5" align="bottom" width="621" height="424" border="0"/>
+
+</p>
+<p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">στην
+ίδια καρτέλα (στην πάνω μεριά) πατήστε
+εκεί που λέει <span lang="en-US">Simple Line </span>και
+αλλάξτε το χρώμα <b>(</b><span lang="en-US"><b>Color</b></span><b>)</b>
+σε μαύρο και το <span lang="en-US"><b>Stroke width</b></span>
+σε 0,3:</font></font></p>
+<p style="line-height: 115%; background: transparent"><img src="pdx_doc_html_7e2863e3.png" name="Image6" align="bottom" width="626" height="256" border="0"/>
+
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR"><br/>
+</span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">κλείστε
+την καρτέλα </font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">με
+τα </span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Layer
+Properties</b></span></font></font> <font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">και
+πηγαίνετε </span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Project
+=&gt; Save As</b></span></font></font> <font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">και
+σώστε το έγγραφο</span></font></font> <font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR"><b>(</b></span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>document</b></span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR"><b>)</b></span></font></font>
+<font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">που
+μόλις φτιάξατε. Έχετε τώρα ένα </span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>QGIS
+document</b></span></font></font> <font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">που
+θα το ανοίγετε με το </span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Project
+=&gt; Open…</b></span></font></font> <font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">κάθε
+φορά που θα θέλετε να φτιάξετε ένα
+πιστοποιητικό δασικού χαρακτήρα!</span></font></font></p>
+<p style="line-height: 115%; background: transparent"><br/>
+<br/>
+
+</p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><i><b>3.
+Δουλεύοντας το πρόγραμμα</b></i></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><u>α)
+Το <span lang="en-US">dxf </span><span lang="el-GR">αρχείο</span></u></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">Τις</span>
+εργασίες που κάνατε έως τώρα δεν
+χρειάζεται να τις επαναλαμβάνετε κάθε
+φορά που θέλετε να δουλέψετε. Από εδώ
+και πέρα το μόνο που σας ενδιαφέρει
+είναι να έχετε στην κατοχή σας ένα
+“σωστό” <span lang="en-US">dxf </span><span lang="el-GR">αρχείο.
+</span></font></font>
+</p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">Και
+καταρχήν τί είναι αυτό το </span><span lang="en-US">dxf
+</span><span lang="el-GR">αρχείο</span><span lang="en-US">;
+</span><span lang="el-GR">Αυτό είναι μια ανοιχτή
+μορφή </span><span lang="en-US"><b>(format)</b></span> <span lang="en-US">CAD
+</span><span lang="el-GR">αρχείων της </span><span lang="en-US">Autodesk.
+</span><span lang="el-GR">Το </span><span lang="en-US">QGIS </span><span lang="el-GR">και
+το </span><span lang="en-US">NanoCAD </span><span lang="el-GR">μπορούν
+και δουλεύουν μ’ αυτήν τη μορφή οπότε
+είμαστε εντάξει. Οι περισσότεροι βέβαια
+από εμάς ξέρουμε τα </span><span lang="en-US">dxf
+</span><span lang="el-GR">αρχεία από το </span><span lang="en-US">AutoCAD
+</span><span lang="el-GR">και από την εφαρμογή του
+Κτηματολογίου. Ζητήστε λοιπόν (από τον
+πολίτη που έκανε την αίτηση ή από τον
+μηχανικό του)</span> <span lang="el-GR">το αρχείο
+</span><span lang="en-US">dxf </span><span lang="el-GR">της
+αιτηθείσας έκτασης. Όχι τον πίνακα
+συντεταγμένων αλλά το </span><span lang="en-US">dxf.</span>
+<span lang="el-GR">Κι αυτό γιατί οι συντεταγμένες
+συνήθως δεν μας δίνονται με όλα τα
+δεκαδικά τους και ως εκ τούτου μπορεί
+να προκύψουν μικρά πολύγωνα </span><span lang="el-GR"><b>(φλύδες)</b></span>
+<span lang="el-GR">που δεν θα έπρεπε να υπάρχουν.
+Τώρα βέβαια αν ο πολίτης έχει μόνο μια
+θέαση στην κατοχή του χωρίς τοπογραφικό
+και χωρίς να υπάρχει μηχανικός τότε
+δεχόμαστε αυτή.</span></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">Πάμε
+τώρα στο “σωστό” </span><span lang="en-US">dxf
+</span><span lang="el-GR">αρχείο. Τί εννοούμε όταν
+το λέμε αυτό. Ένα “σωστό” λοιπόν </span><span lang="en-US">dxf
+</span><span lang="el-GR">αρχείο (για τις ανάγκες
+του προγράμματος πάντα):</span></font></font></p>
+<ul>
+	<li><p style="line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+	<font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">Είναι
+	σε </span><span lang="en-US">format *.dxf 2000 – </span><span lang="el-GR">όχι
+	παραπάνω.</span></font></font></p></li>
+	<li><p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Περιέχει
+	μία (ή και περισσότερες) κλειστή/ές
+	<b>(</b><span lang="en-US"><b>closed) polyline</b></span> <span lang="en-US">μ</span>ε
+	το περίγραμμα/ματα της έκτασης:</font></font></p></li>
+</ul>
+<p align="center"><img src="pdx_doc_html_a12652c1.png" name="Image7" align="bottom" width="257" height="237" border="0"/>
+
+</p>
+<ul>
+	<li><p style="line-height: 115%; background: transparent; page-break-before: auto; page-break-after: auto">
+	<font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Αν
+	η <span lang="en-US">polyline </span>δεν είναι κλειστή
+	τότε επιλέξτε την και κάτω αριστερά
+	στην οθόνη εκεί που γράφει <span lang="en-US"><b>Closed</b></span>
+	πατήστε <span lang="en-US"><b>Yes</b></span><span lang="en-US">.
+	</span>Επίσης μια άλλη συνηθισμένη
+	“πρακτική” είναι το <span lang="en-US">dxf </span>αρχείο
+	να περιέχει όχι μία <span lang="en-US">polyline </span>αλλά
+	δύο (σπάνια περισσότερες) πανομοιότυπες,
+	τη μία πάνω απ’ την άλλη, <span lang="en-US">polylines
+	</span>οπότε πατάμε <span lang="en-US"><b>Zoom =&gt;
+	Extents </b></span><span style="font-weight: normal">μετά </span><b>&lt;</b><span lang="en-US"><b>ctrl</b></span><b>&gt;
+	</b><span lang="en-US"><b>+ a </b></span><span style="font-weight: normal">και
+	αν πάνω αριστερά στο </span><span lang="en-US"><b>Object
+	type</b></span> <span style="font-weight: normal">εμφανίζει
+	από δίπλα </span><span lang="en-US"><b>Polyline (2)</b></span>
+	<span style="font-weight: normal">ενώ το εμβαδόν </span><span lang="en-US"><span style="font-weight: normal">(</span></span><span lang="en-US"><b>Area)</b></span>
+	<span style="font-weight: normal">είναι ίδιο τότε
+	έχουμε διπλότυπο. Σβήστε τη μία.</span></font></font></p></li>
+	<li><p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">Εκτός
+	από την </span><span lang="en-US"><b>polyline</b></span> <span lang="el-GR">δεν
+	περιέχει τίποτε άλλο. Ούτε </span><span lang="en-US"><b>points</b></span>
+	<span lang="el-GR">(σημεία)</span><span lang="en-US">, </span><span lang="el-GR">ούτε
+	</span><span lang="en-US"><b>arcs</b></span> <span lang="el-GR">(τόξα)</span><span lang="en-US">,
+	</span><span lang="el-GR">ούτε </span><span lang="el-GR"><b>line(s</b></span><span lang="en-US"><b>egments)</b></span>
+	<span lang="el-GR">(ευθύγραμμα τμήματα) κτλ. Στο
+	</span><span lang="en-US">NanoCad </span><span lang="el-GR">πατήστε
+	</span><span lang="en-US"><b>Zoom =&gt; Extents</b></span> <span lang="el-GR">και
+	άμα εξαφανιστεί η εικόνα τότε πατήστε
+	</span><span lang="en-US">undo (</span><span lang="el-GR">ή </span><span lang="el-GR"><b>&lt;</b></span><span lang="en-US"><b>ctrl</b></span><span lang="el-GR"><b>&gt;
+	</b></span><span lang="en-US"><b>+ z</b></span><span lang="en-US">)
+	</span><span lang="el-GR">για να πάτε ένα βήμα πίσω
+	και επιλέξτε την (ή τις) </span><span lang="en-US">polyline
+	</span><span lang="el-GR">στη συνέχεια </span><span lang="en-US"><b>Edit
+	=&gt; Copy</b></span> <span lang="en-US">, </span><span lang="el-GR">ανοίξτε
+	νέο αρχείο και μετά </span><span lang="en-US"><b>Edit
+	=&gt; Paste to Original Coordinates</b></span><span lang="en-US">.
+	</span><span lang="el-GR">Τέλος σώστε το αρχείο ως
+	</span><span lang="en-US">dxf2000 </span><span lang="el-GR">σε
+	φάκελο και όνομα της αρεσκείας σας. Στο
+	εξής θα δουλεύετε μ’ αυτό. Την αυτή
+	διαδικασία ακολουθήστε και όταν το </span><span lang="en-US">dxf
+	</span><span lang="el-GR">αρχείο περιέχει πολλά
+	</span><span lang="en-US"><b>layers</b></span><span lang="en-US">.
+	</span><span lang="el-GR">Μην μπλεχτείτε με το να
+	σβήνετε ένα σωρό γραμμές του τοπογραφικού
+	– απλά κάντε </span><span lang="en-US">copy/paste to
+	original coordinates </span><span lang="el-GR">την </span><span lang="en-US">polyline</span><span lang="el-GR">(</span><span lang="en-US">s</span><span lang="el-GR">)</span>
+	<span lang="el-GR">σε ένα ξεχωριστό αρχείο και
+	τελειώσατε!</span></font></font></p></li>
+	<li><p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Αν
+	η <span lang="en-US">polyline </span>σας έχει υψόμετρο
+	διαφορετικό του μηδενός τότε κάντε το
+	μηδέν. Επιλέξτε την και αριστερά στη
+	μέση εκεί που γράφει <b>Elevation</b> θα πρέπει
+	να είναι μηδέν – ή αλλιώς κάντε το εσείς
+	μηδέν.</font></font></p></li>
+	<li><p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Επίσης
+	έχω συναντήσει και την περίπτωση όπου
+	το πρόγραμμα του μηχανικού παράγει μεν
+	<span lang="en-US">dxf </span>αρχεία αλλά αυτά είναι
+	ουσιαστικά άχρηστα – δεν υπάρχει μία
+	<span lang="en-US">polyline </span>αλλά πολλά <span lang="en-US">lines.
+	</span>Σ’ αυτήν την περίπτωση περάστε μια
+	<span lang="en-US">polyline </span>πάνω από τα άκρα των
+	<span lang="en-US">lines </span>γιατί το <span lang="en-US">NanoCad
+	</span>5.0 δεν φαίνεται να κάνει <span lang="en-US">join
+	</span>εκτός κι αν τα <span lang="en-US">lines </span>είναι
+	όλα μέλη μιας νοητής ευθείας. Και πέστε
+	του μηχανικού να κατεβάσει το <span lang="en-US">NanoCad
+	</span>5.0!</font></font></p></li>
+	<li><p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Τέλος
+	υπάρχει και η περίπτωση όπου το <span lang="en-US">dxf
+	</span><span lang="el-GR">αρχείο δεν ανοίγει καν
+	λόγω χαρακτήρων που δεν μπορούν να
+	διαβαστούν </span><span lang="el-GR"><b>(</b></span><span lang="en-US"><b>invalid
+	characters</b></span><span lang="el-GR"><b>)</b></span><span lang="el-GR">.
+	Σ’ αυτήν την περίπτωση λέτε να σας
+	στείλουν ξανά ένα </span><span lang="en-US">dxf
+	</span><span lang="el-GR">αρχείο το οποίο έχει
+	δοκιμάσει και ο ίδιος ο μηχανικός να
+	ανοίξει. Ή στην ανάγκη να σας στείλει
+	το </span><span lang="en-US">CAD </span><span lang="el-GR">αρχείο
+	σε dwg(2010) </span><span lang="en-US">format </span><span lang="el-GR">(του
+	</span><span lang="en-US">AutoCAD </span><span lang="el-GR">δηλαδή
+	– τα ανοίγει το </span><span lang="en-US">NanoCAD</span><span lang="el-GR">)
+	και εν συνεχεία εσείς το σώζετε σε
+	</span><span lang="en-US">dxf(2000).</span></font></font></p></li>
+</ul>
+<p align="left"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Όταν
+τελειώσετε τις εργασίες σας τότε σώστε
+το <span lang="en-US">dxf (2000 </span><span lang="el-GR">πάντα)
+και κλείστε το </span><span lang="en-US">NanoCad. </span><span lang="el-GR">Τώρα
+θα μου πείτε: “Καλά ρε φίλε, είναι δουλειά
+μας να μπλεχτούμε με τα </span><span lang="en-US">dxf
+</span><span lang="el-GR">αρχεία? Άμα είναι σωστά
+τα δεχόμαστε, άμα δεν είναι μας τα
+ξαναστέλνουν.”. Σωστό είναι κι αυτό
+αλλά έτσι καθυστερούμε για μια δουλειά
+που διαρκεί το πολύ 5-10 λεπτά.</span></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><u>β)
+Το περιβάλλον εργασίας</u></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Έχετε
+ετοιμάσει λοιπόν το “σωστό” <span lang="en-US">dxf
+</span><span lang="el-GR">αρχείο και το έχετε σώσει
+με το όνομα και στο φάκελο που θέλετε.
+Να θυμάστε το φάκελο. Ανοίξτε τώρα το
+</span><span lang="en-US">QGIS </span><span lang="el-GR">και στη
+συνέχεια το </span><span lang="en-US">document </span><span lang="el-GR">που
+δημιουργήσατε νωρίτερα. Είστε έτοιμοι.
+Πατήστε το κουμπί του </span><span lang="en-US">pdx.
+</span><span lang="el-GR">Θα ανοίξει το παρακάτω
+παράθυρο:</span></font></font></p>
+<p><img src="pdx_doc_html_9f765596.png" name="Image8" align="bottom" width="641" height="324" border="0"/>
+
+</p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Εδώ
+βλέπουμε την καρτέλα <b>Γενικά</b> που θα
+συμπληρώσετε την πρώτη φορά που θα
+ανοίξετε το πρόγραμμα. Ξεκινήστε λοιπόν
+να συμπληρώνετε τα στοιχεία της καρτέλας
+– εδώ βλέπετε τα δικά μου. Από το πρώτο
+πτυσσόμενο μενού διαλέξτε την Επιθεώρηση
+που ανήκετε και στη συνέχεια τη δική
+σας Διεύθυνση Δασών. Τα υπόλοιπα τα
+συμπληρώνετε εύκολα ανάλογα όπως βλέπετε
+στην εικόνα. Να σταθούμε λίγο στον δασικό
+χάρτη. Αν η έκτασή σας βρίσκεται εντός
+μερικώς κυρωμένου δ.χ. τότε τσεκάρετε
+το <b>Μερικώς Κυρωμένος</b> και ανάλογα
+συμπληρώστε το κείμενο που περιγράφει
+τον δ.χ. όλου του νομού σας – σε γενική
+πτώση. Αν πάλι η έκτασή σας βρίσκεται
+εντός ολικού κυρωμένου δ.χ. ενός ΟΤΑ
+τότε αποεπιλέξτε το <b>Μερικώς Κυρωμένος</b>
+και ανάλογα συμπληρώστε το κείμενο που
+περιγράφει τον δ.χ. του συγκεκριμένου
+ΟΤΑ – σε γενική πάντα πτώση. Μόλις
+συμπληρώσετε τα στοιχεία της πρώτης
+καρτέλας (αλλά και κάθε φορά που θα
+κάνετε αλλαγές σ’ αυτήν) πατήστε
+Αποθήκευση.</font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Πάμε
+τώρα στη δεύτερη καρτέλα <b>Ειδικά</b>:</font></font></p>
+<p><img src="pdx_doc_html_937253f0.png" name="Image9" align="bottom" width="646" height="327" border="0"/>
+
+</p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Συμπληρώστε
+καταρχήν την διεύθυνση του αιτούντα –
+όπως θα τη γράφατε στο πιστοποιητικό
+και στη συνέχεια τον αριθμό εισερχομένου
+πρωτοκόλλου (με την ημερομηνία) της
+αίτησης. Κατόπιν το φύλο <b>(του ή της)</b>
+και το ονοματεπώνυμο του αιτούντα σε
+<b>γενική πτώση</b>. Στο δεξί μέρος γράψτε
+τα στοιχεία της έκτασης όπως αναγράφονται
+στο τοπογραφικό (αν υπάρχει θέαση τότε
+γράφουμε κάτι σαν “0, 1, 2...45 &amp; 0”). Έπειτα
+το εμβαδόν που αναγράφεται στο τοπογραφικό
+διάγραμμα. Προσπεράστε το <span lang="en-US">dxf
+</span>και πάμε στο πρωτόκολλο ΙΡΙΔΑ και
+στην ημερομηνία. Αυτά τα εκδίδουμε
+καταρχήν ανεβάζοντας στο ΙΡΙΔΑ ένα
+ψεύτικο <b>(</b><span lang="en-US"><b>dummy)</b></span> αρχείο
+μόνο και μόνο για να εκδώσουμε τον αριθμό
+πρωτοκόλλου – τον οποίο συμπληρώνουμε
+εδώ. </font></font>
+</p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Αφού
+έχουμε συμπληρώσει όλα τα κουτάκια και
+βεβαιωθούμε ότι είναι σωστά, πατάμε το
+κουμπί που γράφει <span lang="en-US"><b>Browse</b></span>
+και πλοηγούμαστε στον φάκελο που έχουμε
+σώσει το <span lang="en-US">dxf </span>αρχείο μας.
+Διπλό κλικ στο τελευταίο και έχουμε
+εισάγει τη διαδρομή του. Τέλος πατάμε
+το κουμπί <b>Πιστοποιητικό</b>.</font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><u>γ)
+Το αποτέλεσμα (παράγωγα αρχεία)</u></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">Τα
+αρχεία που παράγει το</span> <span lang="en-US">pdx</span>
+<span lang="el-GR">είναι</span></font></font></p>
+<ul>
+	<li><p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR">Το
+	</span><span lang="el-GR"><b>Πιστοποιητικό</b></span>
+	<span lang="el-GR">(*.</span><span lang="en-US">docx</span><span lang="el-GR">)
+	δασικού χαρακτήρα μαζί με τον </span><span lang="el-GR"><b>Χάρτη</b></span>
+	<span lang="el-GR">(*.</span><span lang="en-US">pdf</span><span lang="el-GR">)
+	που το συνοδεύει</span>. <span lang="el-GR">Αυτά
+	βέβαια όταν η έκταση βρίσκεται εντός
+	του κυρωμένου δασικού χάρτη.</span></font></font></p></li>
+	<li><p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Το
+	<b>Διαβιβαστικό</b> <span lang="el-GR">(*.</span><span lang="en-US">docx</span><span lang="el-GR">)
+	που πληροφορεί τον πολίτη ότι π.χ. η
+	έκτασή του βρίσκεται εκτός ανάρτησης
+	του δ.χ ή ότι γι αυτήν εκκρεμούν
+	αντιρρήσεις ενώπιον της ΕΠ.Ε.Α.</span></font></font></p></li>
+	<li><p style="line-height: 115%; background: transparent"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Επίσης
+	μέσα στο φάκελο πάντα του <span lang="en-US">dxf
+	</span>αρχείου και εκτός από τα παραπάνω
+	θα σχηματιστούν και τα ανάλογα <span lang="en-US">shapefiles.
+	</span>Αυτά μπορεί να είναι (όχι πάντα) τα
+	εξής: <b>Δασικά.</b><span lang="en-US"><b>shp,
+	</b></span><b>Αγροτικά.</b><span lang="en-US"><b>shp,</b></span>
+	<b>Αντιρρήσεις.</b><span lang="en-US"><b>shp,
+	</b></span><b>Εξαιρέσεις.shp &amp;</b> <b>Αντιρρήσεις_2.</b><span lang="en-US"><b>shp</b></span><span lang="en-US">.</span></font></font></p></li>
+</ul>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Ρίξτε
+μια ματιά στα </font><font size="3" style="font-size: 12pt"><span lang="en-US">docx
+</span></font><font size="3" style="font-size: 12pt"><span lang="el-GR">αρχεία
+αν σας κάνουν (αν θέλετε να αλλάξετε μια
+λεπτομέρεια) ενώ αν θέλετε να αλλάξετε
+τον χάρτη θα πρέπει στο </span></font><font size="3" style="font-size: 12pt"><span lang="en-US">QGIS
+</span></font><font size="3" style="font-size: 12pt"><span lang="el-GR">να
+πάτε </span></font><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Project
+=&gt; Layouts =&gt; My_Map_Layout</b></span></font> <font size="3" style="font-size: 12pt"><span lang="el-GR">και
+στο δεξί μέρος επιλέξτε πχ την ετικέτα
+που γράφει πχ “</span></font>Τμήμα 1: ΑΔ</font></p>
+<p style="margin-bottom: 0cm"><font face="Courier New, monospace">931,8210
+τ.μ.” , μετά αποεπιλέξτε το πλαίσιο που
+κλειδώνει την ετικέτα:</font></p>
+<p><img src="pdx_doc_html_29a082c6.png" name="Image10" align="bottom" width="567" height="451" border="0"/>
+
+</p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">και
+στη συνέχεια μετακινήστε την ετικέτα
+με το κέρσορα (θα γίνει σταυρόνημα) όπου
+θέλετε. Σώστε και πατήστε (στο παράθυρο
+του <span lang="en-US">Layout </span><span lang="el-GR">πάντα)
+</span><span lang="en-US"><b>Layout =&gt; Export as Pdf… </b></span>και
+έτσι δημιουργείτε το χάρτη της αρεσκείας
+σας.</font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><i><b><span lang="en-US">4</span>.
+Παράρτημα</b></i></font></font></p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><u>α)
+Διάγραμμα ροής </u></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US"><u>(</u></span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="el-GR"><u>από
+</u></span></font></font><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US"><u><a href="https://www.drawio.com/">https://www.drawio.com/</a>)</u></span></font></font></p>
+<p><img src="%CE%91%CE%BD%CF%8E%CE%BD%CF%85%CE%BC%CE%BF%20%CE%B4%CE%B9%CE%AC%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B12.png" name="Image11" align="bottom" width="614" height="881" border="0"/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><u>β)
+Λογισμικό που χρησιμοποιήθηκε</u></font></font></p>
+<p><span style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">QGIS:
+<a href="https://qgis.org/">https://qgis.org/</a> </span></font></font></span>
+</p>
+<p><span style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">NanoCAD:
+<a href="https://nanocad.com/">https://nanocad.com/</a> </span></font></font></span>
+</p>
+<p><span style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">Python:
+<a href="https://www.python.org/">https://www.python.org/</a> &amp;
+<a href="https://pypi.org/project/python-docx/">python-docx</a></span></font></font></span></p>
+<p><span style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">Notepad++:
+<a href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a>
+</span></font></font></span>
+</p>
+<p><span style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">LibreOffice:
+<a href="https://el.libreoffice.org/">https://el.libreoffice.org/</a>
+</span></font></font></span>
+</p>
+<p><span style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">IrfanView:
+<a href="https://www.irfanview.com/">https://www.irfanview.com/</a> </span></font></font></span>
+</p>
+<p><span style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">7</font></font></span><span style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><span lang="en-US">zip</span></font></font></span><span style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">:
+<a href="https://www.7-zip.org/">https://www.7-zip.org/</a> </font></font></span>
+</p>
+<p><font face="Courier New, monospace"><span lang="en-US">AI:
+<a href="https://deepai.org/">https://deepai.org/</a> &amp; <a href="https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&amp;ia=chat&amp;duckai=1">Duck.ai</a></span></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="Courier New, monospace"><font size="3" style="font-size: 12pt"><u>γ)
+Επίλογος</u></font></font></p>
+<p style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Το
+πρόγραμμα <span lang="en-US">pdx </span><span lang="el-GR">είναι
+τελείως πειραματικό και δεν παρέχεται
+καμία εγγύηση καλής λειτουργίας. </span>Ωστόσο
+το έχω δοκιμάσει σε αρκετές περιπτώσεις
+Πιστοποιητικών και δεν έχω εντοπίσει
+κάποια άξια λόγου αδυναμία. Βλέπω
+επομένως ότι λειτουργεί καλά. Όπως
+ανέφερα και στην αρχή η ανάγκη αυτού
+του προγράμματος προέκυψε από τον <b>ΠΟΛΥ
+</b>φόρτο εργασίας. Ευελπιστώ να βοήθησα
+έστω και λίγο. </font></font>
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Οκτώβριος
+2025</font></font></p>
+<p style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Σάμος</font></font></p>
+<p style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Παναγιώτης
+Τσιμπέρης</font></font></p>
+<p style="text-decoration: none"><font face="Courier New, monospace"><font size="3" style="font-size: 12pt">Δασολόγος</font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p align="left"><br/>
+<br/>
+
+</p>
+<p align="left"><br/>
+<br/>
+
+</p>
+<p align="left"><br/>
+<br/>
+
+</p>
+<p align="left"><br/>
+<br/>
+
+</p>
+<p align="left"><br/>
+<br/>
+
+</p>
+</body>
+</html>
